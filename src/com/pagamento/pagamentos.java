@@ -2,7 +2,7 @@ package com.pagamento;
 
 import java.util.Scanner;
 
-public class Contas {
+public class pagamentos {
 
 	public static void main(String[] args) {
 		Salario salario = new Salario();
