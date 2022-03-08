@@ -7,7 +7,6 @@ public class pagamentos {
 	public static void main(String[] args) {
 		Salario salario = new Salario();
 		Scanner myObj = new Scanner(System.in);
-			
 		System.out.println("digite seu salario: ");
 		int salarioBruto = myObj.nextInt();
 		
