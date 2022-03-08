@@ -1,8 +1,17 @@
 package com.pagamento;
 
 public class Salario {
-	public int salarioLiquido(int salarioBruto){
+	public int salarioLiquido(int salarioBruto) {
 		int salarioLiquido = salarioBruto - 300;
-		return salarioLiquido;	
+		return salarioLiquido;
+	}
+
+	public String declararIR(int salarioBruto) {
+		int rendimentoAnual = salarioBruto * 12;
+		if (rendimentoAnual <= 24000)
+			return "Você não tera que pagar imposto de renda ";
+		else
+			return "Você tera que pagar imposto de renda ";
+		
 	}
 }
