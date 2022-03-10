@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Pagamentos {
 
 	public static void main(String[] args) {
-		Salario salario = new Salario();
+		SalarioServico salario = new SalarioServico();
 		Scanner myObj = new Scanner(System.in);
 		
 		System.out.println("digite seu salario: ");
