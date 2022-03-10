@@ -13,8 +13,11 @@ public class Pagamentos {
 		
 		int salarioLiquido = salario.salarioLiquido(salarioBruto);
 		System.out.println("seu salario liquido e:  " + salarioLiquido);
-		
+				
 		String declaracaoIR = salario.declararIR(salarioBruto);
 		System.out.println(declaracaoIR);
+		
+		int horaTrabalhada = salario.horaTrabalhada(salarioBruto);
+		System.out.println("Valor da Hora de trabalho é: " + horaTrabalhada);			
 	}
 }

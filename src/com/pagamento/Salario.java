@@ -12,6 +12,9 @@ public class Salario {
 			return "Você não tera que pagar imposto de renda ";
 		else
 			return "Você tera que pagar imposto de renda ";
-		
+	}
+	public int horaTrabalhada(int salarioBruto) {
+		int valorHora = salarioBruto / 220;
+		return valorHora;
 	}
 }
