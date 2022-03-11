@@ -11,16 +11,16 @@ public class Pagamentos {
 		System.out.println("digite seu salario: ");
 		int salarioBruto = myObj.nextInt();
 
-		int salarioLiquido = salario.salarioLiquido(salarioBruto);
-		System.out.println("seu salario liquido e:  " + salarioLiquido);
+		int variavelCalcularsalariolqd = salario.metodoCalculosalario(salarioBruto);
+		System.out.println("seu salario liquido e:  " + variavelCalcularsalariolqd);
 
-		String declaracaoIR = salario.declararIR(salarioBruto);
-		System.out.println(declaracaoIR);
+		String variavelCalculoIR = salario.metodoCalcularIR(salarioBruto);
+		System.out.println(variavelCalculoIR);
 
-		int horaTrabalhada = salario.horaTrabalhada(salarioBruto);
-		System.out.println("Valor da Hora de trabalho é: " + horaTrabalhada);
+		int variavelCalcularhoraTrabalhada = salario.metodoCalcularhora(salarioBruto);
+		System.out.println("Valor da Hora de trabalho é: " + variavelCalcularhoraTrabalhada);
 
-		int contInss = salario.inss(salarioBruto);
+		int contInss = salario.metodoCalcularinss(salarioBruto);
 		System.out.println("Sua contribuição Inss e: " + contInss);
 
 	}
