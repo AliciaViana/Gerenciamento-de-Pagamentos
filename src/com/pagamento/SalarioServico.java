@@ -21,14 +21,23 @@ public class SalarioServico {
 
 	public int metodoCalcularinss(int salarioBruto) {
 		if (salarioBruto <= 1100) {
-			int valorinss = (salarioBruto * 7) / 100;
-			return valorinss;
-		} else {
+			return ((salarioBruto * 7) / 100);
+			
+		} else if (salarioBruto > 1100 && salarioBruto <= 2000) {
+				// 1100 < salarioBruto <= 2000
 			int valorinss = (salarioBruto * 9) / 100;
 			return valorinss;
-		}	
+			
+		} else if (salarioBruto > 2200 && salarioBruto <= 3000) {
+			int valorinss = (salarioBruto * 12)/100;
+			return valorinss;
+			
+		} else {
+			int valorinss = (salarioBruto * 14)/100;
+			return valorinss;
 			
 		}
+		
 
 	}
 }
