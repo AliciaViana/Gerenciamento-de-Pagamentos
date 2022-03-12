@@ -1,22 +1,24 @@
 package com.pagamento;
 
 public class SalarioServico {
-	public int calcularSalarioLiquido(int salarioBruto) {
+	public int carregaSalarioLiquido(int salarioBruto) {
 		return salarioBruto - 200;
 	}
 
-	public String validaIr(int salarioBruto) {
+	public String validaPagamentoIR(int salarioBruto) {
 		int rendimentoAnual = salarioBruto * 12;
+		// estrutura de condição
 		if (rendimentoAnual <= 24000)
 			return "Você não tera que pagar imposto de renda ";
 		else
 			return "Você tera que pagar imposto de renda ";
 	}
-	public int calcularSalarioHora(int salarioBruto) {
+	
+	public int carregaSalarioHora(int salarioBruto) {
 		return salarioBruto / 200;
 	}
 
-	public int calcularInss(int salarioBruto) {
+	public int carregaPagamentoINSS(int salarioBruto) {
 		if (salarioBruto <= 1100) {
 			return ((salarioBruto * 7) / 100);
 			
